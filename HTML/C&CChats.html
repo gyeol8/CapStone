@@ -10,23 +10,23 @@
         <script src="https://kit.fontawesome.com/f48f31764d.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="../main/profile.css">
-        <link rel="stylesheet" href="../header/mainheader.css">
+        <link rel="stylesheet" href="../CSS/DEGINE/mainheader.css">
+        <link rel="stylesheet" href="../CSS/DEGINE/mainfooter.css">
 
     </head>
 
     <body>
         <header class="main_header">
-            <div class="header_column">
-                <div class = "header__column">
-                    <span class = "header__name">
-                        채팅
-                    </span>
-                </div>
-                <div class = "header__column">
-                    <i class = "fas fa-search"></i>
-                    <i class = "fas fa-user-plus"></i>
-                    <i class = "fas fa-cog"></i>
-                </div>
+            <h1 class="main_header__title">
+                채팅
+            </h1>
+            <div class="main_header__icons">
+                <span>
+                    <i class="fas fa-search fa-lg"></i>
+                </span>
+                <span>
+                    <i class="fas fa-cog fa-lg"></i>
+                </span>
             </div>
         </header>
         <main class = "chats">
@@ -77,6 +77,28 @@
                 </li>
             </ul>
         </main>
+        <nav class="tab-bar">
+            <ul class="tab-bar__list">
+                <li class="tab-bar__btn">
+                    <a href="../HTML/C&Cpeople.html" class="tab-bar__tab--selected">
+                        <i class="fas fa-user fa-2x"></i>
+                    </a>
+                </li>
+                <li class="tab-bar__list">
+                    <a href="../HTML/C&CChat.html" class="tab-bar__tab">
+                        <span class="tab-bar__notification badge">
+                            1
+                        </span>
+                        <i class="fas fa-comment fa-2x"></i>
+                    </a>
+                </li>
+                <li class="tab-bar__list">
+                    <a href="../HTML/C&CSetting.html" class="tab-bar__tab">
+                        <i class="fas fa-ellipsis-h fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </body>
 
 </html>
