@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+/*조건이 부합되지 않으면 뜨는 CSS*/
+@import "PLAY/NoMobile.css";
+/*화면에 적용되는 개별 CSS*/
+@import "PLAY/people.css";
+/*화면 디자인이 작용되는 CSS*/
+@import "DEGINE/login.css";
+@import "DEGINE/registration.css";
+/*login , registration을 제외한 화면 디자인*/
+@import "DEGINE/mainheader.css";
+@import "DEGINE/profile.css";
+@import "DEGINE/mainfooter.css";
+/*채팅 기능을 만들 JS*/
+@import "../JS/chat.js";

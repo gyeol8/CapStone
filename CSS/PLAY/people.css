@@ -1,0 +1,131 @@
+.box{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background: #1c1c1c;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(0deg,transparent,transparent,
+    #45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: people 6s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(0deg,transparent,transparent,
+    #45f3ff,#45f3ff,#45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: people 6s linear infinite;
+    animation-delay: -3s;
+}
+img{
+    border: 3px solid #000;
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    padding-left: 0.7px;
+    padding-top: 0.7px;
+}
+.borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+.borderLine::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(0deg,transparent,transparent,
+    #ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: people 6s linear infinite;
+    animation-delay: -1.5s;
+}
+.borderLine::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 110px;
+    height: 110px;
+    background: linear-gradient(0deg,transparent,transparent,
+    #ff2770,#ff2770,#ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: people 6s linear infinite;
+    animation-delay: -4.5s;
+}
+@keyframes people{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box form{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    border-radius: 50%;
+    z-index: 2;
+    display: inline-block;
+    flex-direction: column;
+}
+.friends{
+    padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel{
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 15px;
+}
+.friends-screen__channel-header{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}
+@keyframes hideSplashScreen{
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+}
+#splash-screen{
+    background-color: var(--#222);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 132px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 0.3s;
+}  

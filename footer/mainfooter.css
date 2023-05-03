@@ -1,0 +1,10 @@
+.tab-bar{
+    width: 100%;
+    background-color: #222;
+}
+.tab-bar__tab--selected{
+    color: #bbb;
+}
+.tab-bar__tab{
+    color: #fff;
+}
