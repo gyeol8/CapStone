@@ -8,7 +8,6 @@
 @import "DEGINE/registration.css";
 /*login , registration을 제외한 화면 디자인*/
 @import "DEGINE/mainheader.css";
-@import "DEGINE/profile.css";
 @import "DEGINE/mainfooter.css";
 /*채팅 기능을 만들 JS*/
 @import "../JS/chat.js";
