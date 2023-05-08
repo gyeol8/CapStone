@@ -4,8 +4,7 @@
 /*화면에 적용되는 개별 CSS*/
 @import "PLAY/people.css";
 /*화면 디자인이 작용되는 CSS*/
-@import "DEGINE/login.css";
-@import "DEGINE/registration.css";
+
 /*login , registration을 제외한 화면 디자인*/
 @import "DEGINE/mainheader.css";
 @import "DEGINE/mainfooter.css";

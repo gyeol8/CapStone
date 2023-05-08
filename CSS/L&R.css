@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+/*조건이 부합되지 않으면 뜨는 CSS*/
+@import "PLAY/NoMobile.css";
+/*화면 디자인이 작용되는 CSS*/
+@import "PLAY/login.css";
+@import "PLAY/registration.css";
