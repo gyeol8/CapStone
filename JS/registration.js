@@ -1,3 +1,4 @@
+//회사 부여 번호에 적용 되어 숫자별 팀 적용용
 window.onload = function () {
     var companyNumberInput = document.getElementsByName("companyNumber")[0];
     companyNumberInput.setAttribute("min", "1");
@@ -13,6 +14,7 @@ window.onload = function () {
         }
     });
 };
+
 const companyNumberInput = document.querySelector('input[name="companyNumber"]');
 const teamSelect = document.querySelector('#team');
 
